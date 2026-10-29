@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /direito-a-saude/obrigado
+Disallow: /direitos-da-pessoa-com-deficiencia/obrigado

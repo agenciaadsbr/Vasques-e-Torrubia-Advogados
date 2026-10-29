@@ -1,0 +1,104 @@
+/* LP Direito à Saúde — direção: acolhedora, editorial, fluida */
+.sd-hero{position:relative}
+.sd-hero__media{position:relative;height:640px;max-width:1440px;margin:0 auto;overflow:hidden;border-radius:0 0 48px 48px;background:var(--vt-salvia-claro)}
+.sd-hero__media img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+@media (prefers-reduced-motion:no-preference){.sd-hero__media img{animation:sdDrift 18s ease-in-out infinite alternate}}
+@keyframes sdDrift{from{transform:scale(1.02)}to{transform:scale(1.08)}}
+.sd-arc{position:absolute;pointer-events:none;fill:none;stroke:var(--vt-salvia);stroke-width:1.5}
+.sd-hero__arc{right:-120px;top:-60px;width:520px;height:520px;stroke:#fff;opacity:.85}
+.sd-hero__card{position:relative;margin-top:-250px;max-width:640px;background:#fff;border-radius:28px;padding:52px 56px;box-shadow:0 30px 60px rgba(26,23,24,.12);display:flex;flex-direction:column;gap:22px}
+.sd-eyebrow{align-self:flex-start;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--vt-verde-escuro);background:var(--vt-salvia-bg);padding:8px 14px;border-radius:999px}
+.sd-h1{font-family:var(--vt-serif);font-weight:600;font-size:60px;line-height:1.02;color:var(--vt-tinta)}
+.sd-h1 em,.sd-h2 em{font-style:normal;color:var(--vt-verde)}
+.sd-rule{width:56px;height:2px;background:var(--vt-cobre);border:0;margin:0}
+.sd-lead{font-size:19px;color:var(--vt-texto-suave)}
+.sd-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.sd-h2{font-family:var(--vt-serif);font-weight:600;font-size:48px;line-height:1.06;color:var(--vt-tinta)}
+.sd-kicker{font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--vt-verde)}
+.sd-sec{padding:120px 0}
+
+/* Situações: coluna fixa + lista editorial */
+.sd-sit{display:flex;gap:72px;align-items:flex-start}
+.sd-sit__aside{flex:0 0 380px;position:sticky;top:110px;display:flex;flex-direction:column;gap:20px}
+.sd-sit__aside p{color:var(--vt-texto-suave)}
+.sd-sit__img{margin-top:12px;height:320px;border-radius:190px 190px 24px 24px;overflow:hidden;background:var(--vt-salvia-claro)}
+.sd-sit__img img{width:100%;height:100%;object-fit:cover}
+.sd-list{flex:1 1 auto;min-width:0;list-style:none;margin:0;padding:0;border-top:1px solid var(--vt-linha)}
+.sd-list li{display:flex;gap:28px;padding:34px 20px;border-bottom:1px solid var(--vt-linha);transition:background-color .35s ease}
+.sd-list li:hover{background:#EFEBE2}
+.sd-num{flex:0 0 auto;width:48px;height:48px;border-radius:50%;border:1px solid var(--vt-salvia);display:flex;align-items:center;justify-content:center;font-family:var(--vt-serif);font-size:24px;font-weight:600;color:var(--vt-verde)}
+.sd-list h3{font-size:22px;font-weight:700;color:var(--vt-tinta);margin-bottom:8px}
+.sd-list p{color:var(--vt-texto-suave)}
+
+/* Como funciona */
+.sd-como{background:var(--vt-salvia-bg);border-radius:48px 48px 0 0;position:relative;overflow:hidden}
+.sd-como .sd-arc{left:-180px;bottom:-260px;width:620px;height:620px}
+.sd-steps{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;position:relative}
+.sd-steps li{border-top:2px solid var(--vt-verde-escuro);padding-top:24px;display:flex;flex-direction:column;gap:12px}
+.sd-steps span{font-family:var(--vt-serif);font-size:44px;font-weight:600;color:var(--vt-verde);line-height:1}
+.sd-steps h3{font-size:20px;font-weight:700}
+.sd-steps p{color:var(--vt-texto-suave);font-size:17px}
+
+/* Documentos: imagem + cartão sobreposto */
+.sd-docs{background:var(--vt-salvia-bg);padding:0 0 120px}
+.sd-docs__in{display:flex;align-items:center}
+.sd-docs__img{flex:0 0 54%;height:480px;border-radius:28px;overflow:hidden;background:var(--vt-salvia-claro)}
+.sd-docs__img img{width:100%;height:100%;object-fit:cover}
+.sd-docs__card{flex:1 1 auto;margin-left:-72px;position:relative;background:#fff;border-radius:28px;padding:48px;box-shadow:0 24px 50px rgba(26,23,24,.10);display:flex;flex-direction:column;gap:18px}
+.sd-docs__card .sd-h2{font-size:38px}
+.sd-check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.sd-check li{display:flex;gap:12px;align-items:flex-start}
+.sd-check svg{flex:0 0 auto;margin-top:4px}
+
+/* Dra. */
+.sd-dra{text-align:center;max-width:860px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:22px}
+.sd-dra p{font-size:20px;color:var(--vt-texto-suave)}
+
+/* FAQ */
+.sd-faq{display:flex;gap:64px;align-items:flex-start}
+.sd-faq .sd-h2{flex:0 0 340px}
+.sd-faq__list{flex:1 1 auto;min-width:0;border-top:1px solid var(--vt-linha)}
+.sd-faq details{border-bottom:1px solid var(--vt-linha);padding:22px 4px}
+.sd-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px;font-size:19px;font-weight:700}
+.sd-faq summary::-webkit-details-marker{display:none}
+.sd-faq summary span{font-size:28px;color:var(--vt-verde);transition:transform .3s ease;font-weight:400}
+.sd-faq details[open] summary span{transform:rotate(45deg)}
+.sd-faq details p{margin-top:12px;color:var(--vt-texto-suave)}
+
+/* Contato */
+.sd-contato{background:var(--vt-verde-escuro);color:#fff;border-radius:48px 48px 0 0;position:relative;overflow:hidden}
+.sd-contato .sd-arc{right:-200px;top:-200px;width:640px;height:640px;stroke:var(--vt-salvia);opacity:.6}
+.sd-contato__in{display:flex;gap:72px;align-items:center;position:relative}
+.sd-contato__txt{flex:1 1 0;display:flex;flex-direction:column;gap:18px}
+.sd-contato__txt .sd-h2{color:#fff}
+.sd-contato__txt p{color:#DDE9E1}
+.sd-contato__txt .sd-note{font-size:16px;color:#C3D6CA}
+.sd-formbox{flex:0 0 460px;background:#fff;color:var(--vt-texto);border-radius:28px;padding:40px}
+.sd-formbox form{display:flex;flex-direction:column;gap:20px}
+.sd-formbox .vt-btn{width:100%;min-height:56px}
+.sd-formbox .sd-priv{font-size:14px;color:var(--vt-texto-suave);text-align:center}
+
+@media (max-width:820px){
+  .sd-hero__media{height:360px;border-radius:0 0 28px 28px}
+  .sd-hero__arc{width:300px;height:300px;right:-90px}
+  .sd-hero__card{margin:-70px 0 0;padding:32px 22px;max-width:none;align-items:center;text-align:center}
+  .sd-eyebrow{align-self:center}
+  .sd-h1{font-size:40px}
+  .sd-h2,.sd-docs__card .sd-h2{font-size:32px}
+  .sd-actions{flex-direction:column;justify-content:center}
+  .sd-sec{padding:72px 0}
+  .sd-sit,.sd-faq,.sd-contato__in,.sd-docs__in{flex-direction:column;gap:32px}
+  .sd-sit__aside{position:static;flex:auto;align-items:center;text-align:center}
+  .sd-sit__img{display:none}
+  .sd-list li{flex-direction:column;align-items:center;text-align:center;padding:28px 8px;gap:14px}
+  .sd-steps{grid-template-columns:minmax(0,1fr);gap:32px}
+  .sd-steps li{align-items:center;text-align:center}
+  .sd-docs{padding-bottom:72px}
+  .sd-docs__img{flex:auto;width:100%;height:280px}
+  .sd-docs__card{margin:-60px 12px 0;padding:32px 22px;align-items:center;text-align:center}
+  .sd-check li{text-align:left}
+  .sd-faq .sd-h2{flex:auto;text-align:center}
+  .sd-faq summary{font-size:17px;text-align:left}
+  .sd-contato__txt{align-items:center;text-align:center}
+  .sd-formbox{flex:auto;width:100%;padding:28px 20px}
+}
