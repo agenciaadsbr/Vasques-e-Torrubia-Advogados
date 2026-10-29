@@ -74,6 +74,18 @@
     });
   }
 
+  /* ---------- Registro de visita (Supabase lp_visits, 1 por carregamento) ---------- */
+  var SITE = document.body.getAttribute('data-site');
+  if (SITE) {
+    try {
+      fetch('https://qxhnjzyhtllmtdrcyygi.supabase.co/rest/v1/lp_visits', {
+        method: 'POST', keepalive: true,
+        headers: { apikey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF4aG5qenlodGxsbXRkcmN5eWdpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIyMzczNjgsImV4cCI6MjA5NzgxMzM2OH0.DWf4I_x9F--H7ZZHUt_n4V3B__Nlsf1jNZdUV0vNBLU', Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF4aG5qenlodGxsbXRkcmN5eWdpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIyMzczNjgsImV4cCI6MjA5NzgxMzM2OH0.DWf4I_x9F--H7ZZHUt_n4V3B__Nlsf1jNZdUV0vNBLU', 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+        body: JSON.stringify({ site: SITE, path: window.location.pathname + window.location.search.slice(0, 300), referrer: (document.referrer || '').slice(0, 500) })
+      }).catch(function () {});
+    } catch (e) {}
+  }
+
   /* ---------- Formulário de leads ---------- */
   var UTM = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid', 'gclid'];
   var utms = {};

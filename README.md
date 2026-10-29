@@ -27,7 +27,15 @@ api/lead.js                        função Vercel que recebe e repassa o lead
 
 Site estático (HTML/CSS/JS), sem etapa de build.
 
-## Leads
+## Leads e painel
+
+- Visitas e leads gravam no Supabase **ADS BR CLIENTES** (`qxhnjzyhtllmtdrcyygi`), tabelas `lp_visits` e `lp_leads`.
+- Sites: `vasques-torrubia-saude` e `vasques-torrubia-pcd`.
+- Painel: `/dashboard` (login `Admin`, e-mail interno `admin@vasques-torrubia.adsbr.internal`; acesso limitado aos dois sites via `lp_acessos`).
+- Visita: registrada no navegador (`assets/js/lp.js`, atributo `data-site` no `<body>`). Lead: gravado por `api/lead.js`; o visitante só é redirecionado se a gravação for confirmada.
+- `LEAD_WEBHOOK_URL` (opcional) replica o lead para um CRM.
+
+## Leads (detalhes antigos)
 
 O formulário pede apenas **nome e WhatsApp** e envia para `/api/lead` com a frente (`direito_saude` ou `direitos_pcd`), a página de origem e as UTMs/fbclid/gclid. A função repassa o lead em JSON para a URL definida em:
 
