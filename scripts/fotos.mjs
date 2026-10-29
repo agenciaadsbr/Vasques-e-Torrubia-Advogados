@@ -5,12 +5,12 @@ import { mkdir, writeFile } from 'node:fs/promises';
 
 const FOTOS = [
   // nome, id Unsplash, proporção (altura/largura), larguras geradas, recorte
-  { nome: 'saude-hero-sq', id: 'photo-1758691461957-474a7686e388', ar: 1, ws: [400, 600, 900, 1100], crop: 'faces', q: 62 },
+  { nome: 'saude-hero-v2', id: 'photo-1714647212061-2c5ed33ae92a', ar: 1, ws: [400, 600, 900, 1100], crop: 'faces', q: 62 },
   { nome: 'saude-docs', id: 'photo-1631557776808-91908aba7ca0', ar: 0.9, ws: [600, 1000] },
-  { nome: 'pcd-hero-sq', id: 'photo-1764173038973-9f2d6094b6bc', ar: 1, ws: [400, 600, 900, 1100], crop: 'faces', q: 62 },
+  { nome: 'pcd-hero-v2', id: 'photo-1581090122319-8fab9528eaaa', ar: 1, ws: [400, 600, 900, 1100], crop: 'faces', q: 62 },
   { nome: 'saude-como', id: 'photo-1758691462123-8a17ae95d203', ar: 0.62, ws: [900, 1600], q: 55 },
-  { nome: 'pcd-como', id: 'photo-1732194438396-394d2b7c2436', ar: 0.62, ws: [900, 1600], q: 55 },
-  { nome: 'pcd-trabalho', id: 'photo-1758611972595-ac23d772446f', ar: 0.9, ws: [600, 1000] }
+  { nome: 'pcd-como-v2', id: 'photo-1771765767087-ce71e4a7916a', ar: 0.62, ws: [900, 1600], q: 55 },
+  { nome: 'pcd-cidade', id: 'photo-1764173038973-9f2d6094b6bc', ar: 0.9, ws: [600, 1000], crop: 'faces' }
 ];
 
 const dir = new URL('../assets/img/fotos/', import.meta.url);
