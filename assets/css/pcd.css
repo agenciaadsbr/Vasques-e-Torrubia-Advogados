@@ -17,6 +17,7 @@ body.pcd{font-family:"Atkinson Hyperlegible",var(--vt-sans);background:#fff;font
 .pc-mosaic{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:270px 270px;gap:12px}
 .pc-mosaic figure{margin:0;overflow:hidden;background:var(--vt-salvia-claro)}
 .pc-mosaic figure:first-child{grid-row:span 2}
+.pc-mosaic figure:first-child img{object-position:22% center}
 .pc-mosaic img{width:100%;height:100%;object-fit:cover}
 
 /* Índice de temas */
