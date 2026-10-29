@@ -48,7 +48,7 @@ Copie um bloco `<section class="pc-tema">` inteiro em `direitos-da-pessoa-com-de
 
 - Copy final da seção do formulário (textos atuais são provisórios)
 - Destino dos leads (`LEAD_WEBHOOK_URL`)
-- Fotos definitivas (hoje: Freepik, servidas pelo CDN do Freepik)
+- Fotos definitivas (hoje: Unsplash, licença livre)
 - Domínio do escritório
 - OAB, endereço e avaliações liberadas para uso público
 - Lista completa de serviços da Dra. Carolina
