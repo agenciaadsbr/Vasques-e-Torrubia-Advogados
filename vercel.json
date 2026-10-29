@@ -13,6 +13,15 @@
       ]
     },
     {
+      "source": "/assets/img/fotos/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/(.*)",
       "headers": [
         {
@@ -30,25 +39,6 @@
       ]
     }
   ],
-  "images": {
-    "sizes": [
-      400,
-      600,
-      900,
-      1000,
-      1200
-    ],
-    "formats": [
-      "image/avif",
-      "image/webp"
-    ],
-    "minimumCacheTTL": 2678400,
-    "remotePatterns": [
-      {
-        "protocol": "https",
-        "hostname": "images.unsplash.com",
-        "pathname": "/photo-**"
-      }
-    ]
-  }
+  "buildCommand": "node scripts/fotos.mjs",
+  "outputDirectory": "."
 }
