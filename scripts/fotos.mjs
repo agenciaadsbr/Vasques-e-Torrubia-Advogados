@@ -5,9 +5,9 @@ import { mkdir, writeFile } from 'node:fs/promises';
 
 const FOTOS = [
   // nome, id Unsplash, proporção (altura/largura), larguras geradas, recorte
-  { nome: 'saude-hero', id: 'photo-1758691461957-474a7686e388', ar: 1.25, ws: [400, 600, 900], crop: 'faces' },
+  { nome: 'saude-hero', id: 'photo-1758691461957-474a7686e388', ar: 1.25, ws: [400, 600, 900], crop: 'faces', q: 62 },
   { nome: 'saude-docs', id: 'photo-1631557776808-91908aba7ca0', ar: 0.9, ws: [600, 1000] },
-  { nome: 'pcd-hero', id: 'photo-1764173038973-9f2d6094b6bc', ar: 1.25, ws: [400, 600, 900], crop: 'faces' },
+  { nome: 'pcd-hero', id: 'photo-1764173038973-9f2d6094b6bc', ar: 1.25, ws: [400, 600, 900], crop: 'faces', q: 62 },
   { nome: 'pcd-trabalho', id: 'photo-1758611972595-ac23d772446f', ar: 0.9, ws: [600, 1000] }
 ];
 
@@ -17,7 +17,7 @@ await mkdir(dir, { recursive: true });
 for (const f of FOTOS) {
   for (const w of f.ws) {
     const h = Math.round(w * f.ar);
-    const url = `https://images.unsplash.com/${f.id}?fm=webp&fit=crop&w=${w}&h=${h}&q=70${f.crop ? '&crop=' + f.crop : ''}`;
+    const url = `https://images.unsplash.com/${f.id}?fm=webp&fit=crop&w=${w}&h=${h}&q=${f.q || 70}${f.crop ? '&crop=' + f.crop : ''}`;
     let ok = false;
     for (let t = 1; t <= 3 && !ok; t++) {
       try {
