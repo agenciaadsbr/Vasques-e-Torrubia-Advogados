@@ -9,153 +9,185 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Direito à Saúde | Vasques e Torrubia Advogados">
 <meta property="og:description" content="Entenda as possibilidades jurídicas diante de negativas e reajustes de planos de saúde.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&w=1200&h=630&q=70">
 <meta name="theme-color" content="#2F5240">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" fetchpriority="high"
+  imagesrcset="https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&crop=faces&w=400&h=500&q=70 400w, https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&crop=faces&w=600&h=750&q=70 600w, https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&crop=faces&w=900&h=1125&q=70 900w"
+  imagesizes="(max-width: 820px) 340px, 500px">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&w=1800&q=75">
-<link rel="stylesheet" href="/assets/css/base.css">
-<link rel="stylesheet" href="/assets/css/saude.css">
-<script src="/assets/js/tracking.js"></script>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Source+Sans+3:wght@400;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Source+Sans+3:wght@400;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="/assets/css/lp.css">
+<script src="/assets/js/tracking.js" defer></script>
+<script src="/assets/js/lp.js" defer></script>
 </head>
-<body>
-<a class="vt-skip" href="#conteudo">Pular para o conteúdo</a>
+<body class="t-saude">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="vt-header">
-  <div class="vt-wrap vt-header__in">
-    <a class="vt-logo" href="#conteudo"><img src="/assets/img/logo-ink.svg" alt="Vasques &amp; Torrubia Advogados" width="78" height="44"></a>
-    <a class="vt-btn vt-btn--sm" href="#contato">Solicitar orientação</a>
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="hdr__logo" href="#conteudo"><img src="/assets/img/logo-ink.svg" alt="Vasques &amp; Torrubia Advogados" width="103" height="58"></a>
+    <nav aria-label="Seções da página"><a href="#areas">Áreas</a><a href="#como">Como funciona</a><a href="#duvidas">Dúvidas</a></nav>
+    <a class="btn btn--sm" href="#contato">Solicitar orientação</a>
   </div>
 </header>
 
 <main id="conteudo">
 
-  <section class="sd-hero" aria-labelledby="hero-t">
-    <div class="sd-hero__media">
-      <img src="https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&w=1800&q=75" alt="Paciente conversando com o médico em um consultório moderno" width="1600" height="1067" fetchpriority="high">
-      <svg class="sd-arc sd-hero__arc" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="49"></circle></svg>
-    </div>
-    <div class="vt-wrap">
-      <div class="sd-hero__card">
-        <span class="sd-eyebrow">Direito à Saúde · Rio de Janeiro</span>
-        <h1 id="hero-t" class="sd-h1">Entenda seus direitos diante do <em>plano de saúde</em>.</h1>
-        <hr class="sd-rule">
-        <p class="sd-lead">Orientação jurídica sobre negativas de cobertura, limitações de terapias, reajustes e descredenciamentos. Cada situação é analisada individualmente, com atenção ao contrato e aos documentos do caso.</p>
-        <div class="sd-actions">
-          <a class="vt-btn" href="#contato">Solicitar orientação</a>
-          <a class="vt-link" href="#situacoes">Ver em que podemos orientar</a>
+  <section class="hero" aria-labelledby="hero-t">
+    <div class="hero__bg" aria-hidden="true"><div class="hero__blob"></div><div class="hero__dots"></div></div>
+    <div class="wrap hero__in">
+      <div class="hero__txt">
+        <span class="eyebrow in"><i></i>Direito à Saúde · Rio de Janeiro</span>
+        <h1 id="hero-t" class="in">Entenda seus direitos diante do <span class="hl">plano de saúde<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 80 4, 200 2, 297 10"/></svg></span>.</h1>
+        <p class="hero__lead in">Orientação jurídica sobre negativas de cobertura, limitações de terapias, reajustes e descredenciamentos. Cada situação é analisada individualmente, com atenção ao contrato e aos documentos do caso.</p>
+        <div class="hero__cta in">
+          <a class="btn" href="#contato">Solicitar orientação <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost" href="#areas">Ver áreas de atuação</a>
         </div>
+        <ul class="chips in">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Atendimento no Rio de Janeiro</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>Análise individual de cada caso</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.8-.9L3 21l2-5a8.4 8.4 0 1 1 16-4.5Z"/></svg>Primeiro contato pelo WhatsApp</li>
+        </ul>
+      </div>
+      <div class="hero__art">
+        <div class="hero__block" aria-hidden="true"></div>
+        <div class="hero__arch">
+          <img src="https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&crop=faces&w=600&h=750&q=70"
+               srcset="https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&crop=faces&w=400&h=500&q=70 400w, https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&crop=faces&w=600&h=750&q=70 600w, https://images.unsplash.com/photo-1758691461957-474a7686e388?auto=format&fit=crop&crop=faces&w=900&h=1125&q=70 900w"
+               sizes="(max-width: 820px) 340px, 500px" width="500" height="625" fetchpriority="high" decoding="async"
+               alt="Paciente conversando com o médico em um consultório moderno">
+        </div>
+        <svg class="hero__ring" viewBox="0 0 552 677" aria-hidden="true"><path d="M2 675 V276 A274 274 0 0 1 550 276 V675"/></svg>
+        <div class="float float--a"><span class="float__ic">VT</span><div><b>Dra. Vanessa Vasques</b><span>Direito à Saúde</span></div></div>
+        <div class="float float--b"><span class="float__ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg></span><div><b>Linguagem clara</b><span>do início ao fim</span></div></div>
       </div>
     </div>
   </section>
 
-  <section id="situacoes" class="sd-sec" aria-labelledby="sit-t">
-    <div class="vt-wrap sd-sit">
-      <div class="sd-sit__aside vt-reveal">
-        <span class="sd-kicker">Áreas de orientação</span>
-        <h2 id="sit-t" class="sd-h2">Situações com planos de saúde em que <em>podemos orientar</em></h2>
+  <div class="ticker" aria-label="Áreas de atuação">
+    <div class="ticker__track">
+      <ul><li>Negativa de cirurgia ou tratamento</li><li>Negativa ou limitação de terapias</li><li>Reajustes de planos de saúde</li><li>Falso coletivo</li><li>Descredenciamento de profissionais</li></ul>
+      <ul aria-hidden="true"><li>Negativa de cirurgia ou tratamento</li><li>Negativa ou limitação de terapias</li><li>Reajustes de planos de saúde</li><li>Falso coletivo</li><li>Descredenciamento de profissionais</li></ul>
+    </div>
+    <button class="ticker__pause" type="button" aria-pressed="false" aria-label="Pausar animação"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>
+  </div>
+
+  <section id="areas" class="sec" aria-labelledby="areas-t">
+    <div class="wrap">
+      <div class="sec__head rv">
+        <span class="kicker">Áreas de orientação</span>
+        <h2 id="areas-t">Situações com planos de saúde em que <em>podemos orientar</em></h2>
         <p>Nem toda negativa ou reajuste é irregular. Por isso, o primeiro passo é entender o contrato, as regras aplicáveis e os documentos disponíveis.</p>
-        <div class="sd-sit__img"><img src="https://images.unsplash.com/photo-1758691462123-8a17ae95d203?auto=format&fit=crop&w=900&q=75" alt="Médico conversando com um paciente no consultório" loading="lazy" width="900" height="600"></div>
       </div>
-      <ol class="sd-list">
-        <li class="vt-reveal"><span class="sd-num" aria-hidden="true">1</span><div><h3>Negativa de cirurgia ou tratamento</h3><p>Quando um procedimento ou tratamento prescrito, inclusive oncológico, não é autorizado, analisamos o contrato, a prescrição e as regras aplicáveis para entender quais caminhos existem.</p></div></li>
-        <li class="vt-reveal"><span class="sd-num" aria-hidden="true">2</span><div><h3>Negativa ou limitação de terapias</h3><p>Limitações no número de sessões ou na cobertura de terapias são avaliadas considerando o contrato e as particularidades de cada situação.</p></div></li>
-        <li class="vt-reveal"><span class="sd-num" aria-hidden="true">3</span><div><h3>Reajustes de planos de saúde</h3><p>Nem todo reajuste é irregular. Verificamos se o aumento aplicado, inclusive por mudança de faixa etária, está de acordo com o contrato e com as normas do setor.</p></div></li>
-        <li class="vt-reveal"><span class="sd-num" aria-hidden="true">4</span><div><h3>Falso coletivo (MEI ou CNPJ)</h3><p>Planos contratados por MEI ou CNPJ podem, em alguns casos, funcionar na prática como planos familiares. Avaliamos a natureza do contrato e os reajustes aplicados.</p></div></li>
-        <li class="vt-reveal"><span class="sd-num" aria-hidden="true">5</span><div><h3>Descredenciamento de profissionais</h3><p>Quando um médico ou outro profissional deixa a rede do plano, a continuidade do atendimento e o vínculo já estabelecido podem ser considerados na análise do caso.</p></div></li>
-      </ol>
+      <div class="cards cards--5">
+        <article class="card rv" style="--d:0s"><span class="card__n" aria-hidden="true">01</span><span class="card__ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2M15 11l-6 6M9 11l6 6"/></svg></span><h3>Negativa de cirurgia ou tratamento</h3><p>Quando um procedimento ou tratamento prescrito, inclusive oncológico, não é autorizado, analisamos o contrato, a prescrição e as regras aplicáveis para entender quais caminhos existem.</p></article>
+        <article class="card rv" style="--d:.08s"><span class="card__n" aria-hidden="true">02</span><span class="card__ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><h3>Negativa ou limitação de terapias</h3><p>Limitações no número de sessões ou na cobertura de terapias são avaliadas considerando o contrato e as particularidades de cada situação.</p></article>
+        <article class="card rv" style="--d:.16s"><span class="card__n" aria-hidden="true">03</span><span class="card__ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg></span><h3>Reajustes de planos de saúde</h3><p>Nem todo reajuste é irregular. Verificamos se o aumento aplicado, inclusive por mudança de faixa etária, está de acordo com o contrato e com as normas do setor.</p></article>
+        <article class="card rv" style="--d:0s"><span class="card__n" aria-hidden="true">04</span><span class="card__ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></svg></span><h3>Falso coletivo (MEI ou CNPJ)</h3><p>Planos contratados por MEI ou CNPJ podem, em alguns casos, funcionar na prática como planos familiares. Avaliamos a natureza do contrato e os reajustes aplicados.</p></article>
+        <article class="card rv" style="--d:.08s"><span class="card__n" aria-hidden="true">05</span><span class="card__ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 11h-6"/></svg></span><h3>Descredenciamento de profissionais</h3><p>Quando um médico ou outro profissional deixa a rede do plano, a continuidade do atendimento e o vínculo já estabelecido podem ser considerados na análise do caso.</p></article>
+      </div>
     </div>
   </section>
 
-  <section class="sd-sec sd-como" aria-labelledby="como-t">
-    <svg class="sd-arc" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="49"></circle></svg>
-    <div class="vt-wrap" style="position:relative">
-      <div class="vt-center-m vt-reveal" style="max-width:660px;display:flex;flex-direction:column;gap:14px">
-        <span class="sd-kicker">Como funciona</span>
-        <h2 id="como-t" class="sd-h2">Um primeiro contato simples, <em>sem promessas de resultado</em></h2>
-      </div>
-      <ol class="sd-steps">
-        <li class="vt-reveal"><span>1</span><h3>Você entra em contato</h3><p>Pelo formulário desta página, informando apenas seu nome e WhatsApp.</p></li>
-        <li class="vt-reveal"><span>2</span><h3>Conversamos sobre a situação</h3><p>Entendemos o que aconteceu e quais documentos estão disponíveis, no seu tempo.</p></li>
-        <li class="vt-reveal"><span>3</span><h3>Você recebe uma orientação</h3><p>Explicamos as possibilidades jurídicas do caso com transparência.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="sd-docs" aria-labelledby="doc-t">
-    <div class="vt-wrap sd-docs__in">
-      <div class="sd-docs__img"><img src="https://images.unsplash.com/photo-1631557776808-91908aba7ca0?auto=format&fit=crop&w=1200&q=75" alt="Documentos e caneta sobre uma mesa" loading="lazy" width="1200" height="800"></div>
-      <div class="sd-docs__card vt-reveal">
-        <h2 id="doc-t" class="sd-h2">Documentos que costumam ajudar na análise</h2>
-        <p style="color:var(--vt-texto-suave)">Não é preciso ter tudo em mãos para o primeiro contato. Quando disponíveis, estes materiais facilitam a orientação:</p>
-        <ul class="sd-check">
-          <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F7C5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Contrato ou carteirinha do plano de saúde</span></li>
-          <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F7C5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Resposta do plano por escrito ou número de protocolo</span></li>
-          <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F7C5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Prescrição ou relatório do profissional que acompanha o caso</span></li>
-          <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F7C5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Boletos ou comunicados com os valores de reajuste</span></li>
+  <section class="sec" style="padding-top:0" aria-labelledby="doc-t">
+    <div class="wrap feature">
+      <div class="feature__img rv rv-l"><img src="https://images.unsplash.com/photo-1631557776808-91908aba7ca0?auto=format&fit=crop&w=1000&h=900&q=70" srcset="https://images.unsplash.com/photo-1631557776808-91908aba7ca0?auto=format&fit=crop&w=600&h=560&q=70 600w, https://images.unsplash.com/photo-1631557776808-91908aba7ca0?auto=format&fit=crop&w=1000&h=900&q=70 1000w" sizes="(max-width: 820px) 100vw, 640px" width="1000" height="900" loading="lazy" decoding="async" alt="Documentos e caneta sobre uma mesa"></div>
+      <div class="feature__card rv rv-r">
+        <span class="kicker">Antes de conversar</span>
+        <h2 id="doc-t">Documentos que costumam ajudar na análise</h2>
+        <p style="color:var(--suave)">Não é preciso ter tudo em mãos para o primeiro contato. Quando disponíveis, estes materiais facilitam a orientação:</p>
+        <ul class="check">
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Contrato ou carteirinha do plano de saúde</li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Resposta do plano por escrito ou número de protocolo</li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Prescrição ou relatório do profissional que acompanha o caso</li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Boletos ou comunicados com os valores de reajuste</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="sd-sec" aria-labelledby="dra-t">
-    <div class="vt-wrap">
-      <div class="sd-dra vt-reveal">
-        <hr class="sd-rule">
-        <h2 id="dra-t" class="sd-h2">Dra. Vanessa Vasques</h2>
-        <p>Responsável pela frente de Direito à Saúde do escritório Vasques e Torrubia Advogados, a Dra. Vanessa orienta pessoas e famílias no Rio de Janeiro em questões envolvendo planos de saúde, com linguagem clara e análise cuidadosa de cada situação.</p>
+  <section id="como" class="sec" style="background:var(--salvia-bg)" aria-labelledby="como-t">
+    <div class="wrap">
+      <div class="sec__head center rv">
+        <span class="kicker">Como funciona</span>
+        <h2 id="como-t">Um primeiro contato simples, <em>sem promessas de resultado</em></h2>
+      </div>
+      <ol class="steps">
+        <li class="rv" style="--d:0s"><b>1</b><h3>Você entra em contato</h3><p>Pelo formulário desta página, informando apenas seu nome e WhatsApp.</p></li>
+        <li class="rv" style="--d:.15s"><b>2</b><h3>Conversamos sobre a situação</h3><p>Entendemos o que aconteceu e quais documentos estão disponíveis, no seu tempo.</p></li>
+        <li class="rv" style="--d:.3s"><b>3</b><h3>Você recebe uma orientação</h3><p>Explicamos as possibilidades jurídicas do caso com transparência.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="dra-t">
+    <div class="wrap">
+      <div class="dra rv">
+        <div class="dra__mono"><img src="/assets/img/favicon.svg" alt="" width="110" height="118" loading="lazy"></div>
+        <div>
+          <span class="kicker">Responsável pela frente</span>
+          <h2 id="dra-t">Dra. Vanessa Vasques</h2>
+          <p>Responsável pela frente de Direito à Saúde do escritório Vasques e Torrubia Advogados, a Dra. Vanessa orienta pessoas e famílias no Rio de Janeiro em questões envolvendo planos de saúde, com linguagem clara e análise cuidadosa de cada situação.</p>
+        </div>
+        <span class="dra__wm" aria-hidden="true">VT</span>
       </div>
     </div>
   </section>
 
-  <section class="sd-sec" style="padding-top:0" aria-labelledby="faq-t">
-    <div class="vt-wrap sd-faq">
-      <h2 id="faq-t" class="sd-h2">Perguntas frequentes</h2>
-      <div class="sd-faq__list">
-        <details><summary>Toda negativa do plano de saúde é ilegal?<span aria-hidden="true">+</span></summary><p>Não. Algumas negativas seguem o contrato e as regras do setor; outras podem ser questionadas. A resposta depende do tipo de plano, da cobertura contratada, da prescrição e da documentação do caso.</p></details>
-        <details><summary>Preciso ter todos os documentos para entrar em contato?<span aria-hidden="true">+</span></summary><p>Não. O primeiro contato serve justamente para entender a situação e indicar quais documentos podem ser úteis.</p></details>
-        <details><summary>Plano contratado por MEI ou CNPJ é sempre irregular?<span aria-hidden="true">+</span></summary><p>Não. Planos empresariais de pequeno porte são permitidos. Em alguns casos, porém, o contrato funciona na prática como um plano familiar, e isso pode ter reflexos nos reajustes. Só a análise do caso concreto permite essa avaliação.</p></details>
-        <details><summary>O que acontece depois que envio meu nome e WhatsApp?<span aria-hidden="true">+</span></summary><p>Você é direcionado ao WhatsApp do escritório para iniciar a conversa. Informações sobre saúde só são tratadas durante o atendimento, se você quiser compartilhá-las.</p></details>
+  <section id="duvidas" class="sec" style="padding-top:0" aria-labelledby="faq-t">
+    <div class="wrap">
+      <div class="sec__head center rv"><span class="kicker">Dúvidas frequentes</span><h2 id="faq-t">Perguntas que costumamos receber</h2></div>
+      <div class="faq rv">
+        <details><summary>Toda negativa do plano de saúde é ilegal?<i aria-hidden="true"></i></summary><p class="ans">Não. Algumas negativas seguem o contrato e as regras do setor; outras podem ser questionadas. A resposta depende do tipo de plano, da cobertura contratada, da prescrição e da documentação do caso.</p></details>
+        <details><summary>Preciso ter todos os documentos para entrar em contato?<i aria-hidden="true"></i></summary><p class="ans">Não. O primeiro contato serve justamente para entender a situação e indicar quais documentos podem ser úteis.</p></details>
+        <details><summary>Plano contratado por MEI ou CNPJ é sempre irregular?<i aria-hidden="true"></i></summary><p class="ans">Não. Planos empresariais de pequeno porte são permitidos. Em alguns casos, porém, o contrato funciona na prática como um plano familiar, e isso pode ter reflexos nos reajustes. Só a análise do caso concreto permite essa avaliação.</p></details>
+        <details><summary>O que acontece depois que envio meu nome e WhatsApp?<i aria-hidden="true"></i></summary><p class="ans">Você é direcionado ao WhatsApp do escritório para iniciar a conversa. Informações sobre saúde só são tratadas durante o atendimento, se você quiser compartilhá-las.</p></details>
       </div>
     </div>
   </section>
 
-  <!-- SEÇÃO DE LEADS — textos provisórios; serão substituídos pela copy enviada pelo cliente/agência -->
-  <section id="contato" class="sd-sec sd-contato" aria-labelledby="form-t">
-    <svg class="sd-arc" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="49"></circle></svg>
-    <div class="vt-wrap sd-contato__in">
-      <div class="sd-contato__txt">
-        <h2 id="form-t" class="sd-h2">Converse com a equipe de Direito à Saúde</h2>
+  <!-- SEÇÃO DE LEADS — textos provisórios; serão substituídos pela copy enviada pela agência -->
+  <section id="contato" class="cta" aria-labelledby="form-t">
+    <svg class="cta__art" viewBox="0 0 1360 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle class="spin" cx="1160" cy="120" r="300" stroke-dasharray="4 10"/><circle cx="1160" cy="120" r="210"/><circle cx="120" cy="740" r="260"/></svg>
+    <div class="cta__in">
+      <div class="cta__txt rv">
+        <span class="kicker" style="color:var(--salvia-2)">Fale com a equipe</span>
+        <h2 id="form-t">Converse com a equipe de Direito à Saúde</h2>
         <p>Deixe seu nome e WhatsApp. Em seguida, você será direcionado para conversar com o escritório.</p>
-        <p class="sd-note">Não pedimos informações de saúde neste formulário.</p>
+        <ul class="cta__list">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Leva menos de um minuto</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Não pedimos informações de saúde neste formulário</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Atendimento no Rio de Janeiro</li>
+        </ul>
       </div>
-      <div class="sd-formbox">
+      <div class="formbox rv">
+        <h3>Solicitar orientação</h3>
+        <p class="sub">Preencha os dois campos abaixo.</p>
         <form class="vt-form" data-vt-lead data-frente="direito_saude" data-obrigado="/direito-a-saude/obrigado" novalidate>
-          <div class="vt-field">
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" autocomplete="name" required aria-required="true" aria-describedby="form-erro">
-          </div>
-          <div class="vt-field">
-            <label for="whatsapp">WhatsApp com DDD</label>
-            <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(21) 90000-0000" required aria-required="true" aria-describedby="form-erro">
-          </div>
-          <div class="vt-hp" aria-hidden="true"><label for="site">Não preencha</label><input id="site" name="site" type="text" tabindex="-1" autocomplete="off"></div>
+          <div class="field"><input id="nome" name="nome" type="text" autocomplete="name" placeholder=" " required aria-required="true" aria-describedby="form-erro"><label for="nome">Seu nome</label></div>
+          <div class="field"><input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel-national" placeholder=" " required aria-required="true" aria-describedby="w-dica form-erro"><label for="whatsapp">WhatsApp com DDD</label><small id="w-dica">Exemplo: (21) 90000-0000</small></div>
+          <div class="hp" aria-hidden="true"><label for="site">Não preencha</label><input id="site" name="site" type="text" tabindex="-1" autocomplete="off"></div>
           <p id="form-erro" class="vt-form__erro" role="alert" aria-live="assertive"></p>
-          <button class="vt-btn" type="submit">Quero orientação</button>
-          <p class="sd-priv">Seus dados são usados apenas para retornar o contato.</p>
+          <button class="btn" type="submit">Quero orientação <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="priv">Seus dados são usados apenas para retornar o contato.</p>
         </form>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="vt-footer">
-  <div class="vt-wrap vt-footer__in">
-    <img src="/assets/img/logo-ink.svg" alt="Vasques &amp; Torrubia Advogados" width="92" height="52">
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <img src="/assets/img/logo-ink.svg" alt="Vasques &amp; Torrubia Advogados" width="103" height="58" loading="lazy">
     <p>Conteúdo de caráter informativo. Cada situação depende de análise individual e não há garantia de resultado.<small>Direito à Saúde · Rio de Janeiro · Imagens: Unsplash</small></p>
   </div>
 </footer>
-<script src="/assets/js/lead.js" defer></script>
+
+<div class="mcta"><a class="btn" href="#contato">Solicitar orientação</a></div>
 </body>
 </html>
