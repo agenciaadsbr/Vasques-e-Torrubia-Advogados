@@ -44,6 +44,24 @@
     });
   }
 
+  /* ---------- Parallax do fundo (fallback p/ Safari/Firefox sem animation-timeline) ---------- */
+  var px = document.querySelectorAll('[data-parallax]');
+  if (px.length && !reduz && !(window.CSS && CSS.supports('animation-timeline: view()'))) {
+    var tick = false;
+    var aplica = function () {
+      tick = false;
+      var vh = window.innerHeight;
+      px.forEach(function (el) {
+        var box = el.parentElement.getBoundingClientRect();
+        if (box.bottom < 0 || box.top > vh) return;
+        var prog = (vh - box.top) / (vh + box.height); // 0 → 1 enquanto a seção cruza a tela
+        el.style.transform = 'translate3d(0,' + ((prog - 0.5) * 24).toFixed(2) + '%,0)';
+      });
+    };
+    window.addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(aplica); } }, { passive: true });
+    aplica();
+  }
+
   /* ---------- Faixa animada: botão de pausa (acessibilidade) ---------- */
   var tk = document.querySelector('.ticker');
   var tkb = document.querySelector('.ticker__pause');

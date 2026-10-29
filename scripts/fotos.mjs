@@ -5,9 +5,11 @@ import { mkdir, writeFile } from 'node:fs/promises';
 
 const FOTOS = [
   // nome, id Unsplash, proporção (altura/largura), larguras geradas, recorte
-  { nome: 'saude-hero', id: 'photo-1758691461957-474a7686e388', ar: 1.25, ws: [400, 600, 900], crop: 'faces', q: 62 },
+  { nome: 'saude-hero', id: 'photo-1758691461957-474a7686e388', ar: 1, ws: [400, 600, 900, 1100], crop: 'faces', q: 62 },
   { nome: 'saude-docs', id: 'photo-1631557776808-91908aba7ca0', ar: 0.9, ws: [600, 1000] },
-  { nome: 'pcd-hero', id: 'photo-1764173038973-9f2d6094b6bc', ar: 1.25, ws: [400, 600, 900], crop: 'faces', q: 62 },
+  { nome: 'pcd-hero', id: 'photo-1764173038973-9f2d6094b6bc', ar: 1, ws: [400, 600, 900, 1100], crop: 'faces', q: 62 },
+  { nome: 'saude-como', id: 'photo-1758691462123-8a17ae95d203', ar: 0.62, ws: [900, 1600], q: 55 },
+  { nome: 'pcd-como', id: 'photo-1732194438396-394d2b7c2436', ar: 0.62, ws: [900, 1600], q: 55 },
   { nome: 'pcd-trabalho', id: 'photo-1758611972595-ac23d772446f', ar: 0.9, ws: [600, 1000] }
 ];
 
