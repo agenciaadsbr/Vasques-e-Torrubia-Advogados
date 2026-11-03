@@ -2,18 +2,18 @@
    Identidade: verde-sálvia, verde profundo, creme, tinta quase preta, serifa nos títulos.
    Para ajustar a paleta, altere apenas as variáveis abaixo. */
 :root{
-  --vt-salvia:#85B296;      /* fundo do logo */
-  --vt-salvia-claro:#DCE9E0;
-  --vt-salvia-bg:#EEF4F0;
-  --vt-verde:#4F7C5F;       /* destaques em títulos (contraste AA em creme/branco) */
-  --vt-verde-escuro:#2F5240;
+  --vt-salvia:#A7BFA7;      /* fundo do logo */
+  --vt-salvia-claro:#D9E4D8;
+  --vt-salvia-bg:#E4ECE3;
+  --vt-verde:#4F6F53;       /* destaques em títulos (contraste AA em creme/branco) */
+  --vt-verde-escuro:#3E5A42;
   --vt-tinta:#1A1718;       /* cor do logo */
   --vt-texto:#2B2A28;
   --vt-texto-suave:#55524D;
-  --vt-creme:#F6F3EC;
+  --vt-creme:#F1F4EF;
   --vt-branco:#FFFFFF;
-  --vt-linha:#DCD6CA;
-  --vt-cobre:#B8702F;       /* fio fino de destaque, usado nos criativos */
+  --vt-linha:#D4CFC6;
+  --vt-cobre:#C4A484;       /* fio fino de destaque, usado nos criativos */
   --vt-erro:#A3321A;
   --vt-serif:"Cormorant Garamond","Libre Caslon Text",Georgia,serif;
   --vt-sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;

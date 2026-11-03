@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <style>
-:root{--bg:#0A0A0A;--card:#171717;--card2:#1F1F1F;--line:#262626;--txt:#EDEDED;--mut:#A1A1A1;--dim:#737373;--ok:#4ADE80;--a1:#E5E5E5;--a2:#85B296;--a3:#B8702F;--err:#F87171}
+:root{--bg:#0A0A0A;--card:#171717;--card2:#1F1F1F;--line:#262626;--txt:#EDEDED;--mut:#A1A1A1;--dim:#737373;--ok:#4ADE80;--a1:#E5E5E5;--a2:#A7BFA7;--a3:#C4A484;--err:#F87171}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
 button,input{font:inherit;color:inherit}
@@ -180,8 +180,8 @@ tr:last-child td{border-bottom:0}
       type: 'line',
       data: { labels: labels, datasets: [
         { label: 'Visitas', data: dias.map(function (d) { return d.v; }), borderColor: '#E5E5E5', backgroundColor: '#E5E5E5', tension: .3, pointRadius: 0, borderWidth: 1.6, yAxisID: 'y' },
-        { label: 'Cadastros', data: dias.map(function (d) { return d.l; }), borderColor: '#85B296', backgroundColor: '#85B296', tension: .3, pointRadius: 2, borderWidth: 1.8, yAxisID: 'y' },
-        { label: 'Conversão (%)', data: conv, borderColor: '#B8702F', backgroundColor: '#B8702F', borderDash: [4, 4], tension: .3, pointRadius: 0, borderWidth: 1.4, yAxisID: 'y1' }
+        { label: 'Cadastros', data: dias.map(function (d) { return d.l; }), borderColor: '#A7BFA7', backgroundColor: '#A7BFA7', tension: .3, pointRadius: 2, borderWidth: 1.8, yAxisID: 'y' },
+        { label: 'Conversão (%)', data: conv, borderColor: '#C4A484', backgroundColor: '#C4A484', borderDash: [4, 4], tension: .3, pointRadius: 0, borderWidth: 1.4, yAxisID: 'y1' }
       ] },
       options: {
         responsive: true, maintainAspectRatio: false, interaction: { mode: 'index', intersect: false },
