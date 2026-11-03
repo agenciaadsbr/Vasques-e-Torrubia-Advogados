@@ -303,4 +303,24 @@ h1,h2{font-family:var(--serif);font-weight:600;color:var(--tinta);line-height:1.
   .ftr__in{flex-direction:column;align-items:center;text-align:center}
   .mcta{display:block}
 }
-.como h2 em,.cta h2 em{color:#E4ECE3}
+
+/* ---------- Seções em verde sálvia da paleta (#A7BFA7) com texto escuro ---------- */
+:root{--verde-noite:#A7BFA7;--verde-rodape:#A7BFA7;--tinta-verde:#2B4130}
+.ticker,.como,.cta,.ftr{color:var(--tinta)}
+.ticker li::after{background:var(--tinta-verde)}
+.ticker__pause{border-color:rgba(26,23,24,.35);color:var(--tinta)}
+.como::before{background:linear-gradient(180deg,rgba(167,191,167,.9) 0%,rgba(167,191,167,.86) 55%,rgba(167,191,167,.94) 100%)}
+.como .kicker,.cta .kicker{color:var(--tinta-verde)}
+.como h2,.cta h2,.como .steps h3{color:var(--tinta)}
+.como h2 em,.cta h2 em{color:var(--tinta-verde)}
+.como .steps p,.cta__txt p{color:var(--texto)}
+.como .steps b{background:#fff;border-color:var(--tinta-verde);color:var(--tinta-verde);box-shadow:0 0 0 8px rgba(43,65,48,.1)}
+.como .steps li{background:rgba(255,255,255,.55);border-color:rgba(255,255,255,.7)}
+.como .steps li:hover{background:rgba(255,255,255,.75)}
+.cta__list li{color:var(--tinta)}
+.cta__list svg{color:var(--tinta-verde)}
+.cta__art circle{stroke:rgba(43,65,48,.22)}
+.formbox{box-shadow:0 40px 80px -30px rgba(43,65,48,.45)}
+.ftr img{filter:none}
+.ftr p{color:var(--texto)}
+.ftr small{color:var(--tinta-verde)}
