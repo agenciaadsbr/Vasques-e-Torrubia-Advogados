@@ -324,3 +324,14 @@ h1,h2{font-family:var(--serif);font-weight:600;color:var(--tinta);line-height:1.
 .ftr img{filter:none}
 .ftr p{color:var(--texto)}
 .ftr small{color:var(--tinta-verde)}
+
+/* "Como funciona": sálvia mais escuro, texto claro */
+.como{background:#4F6F53;color:#fff}
+.como::before{background:linear-gradient(180deg,rgba(79,111,83,.9) 0%,rgba(79,111,83,.86) 55%,rgba(68,96,72,.94) 100%)}
+.como .kicker{color:#E4ECE3}
+.como h2,.como .steps h3{color:#fff}
+.como h2 em{color:#D9E4D8}
+.como .steps p{color:#F1F4EF}
+.como .steps b{background:transparent;border-color:#D9E4D8;color:#fff;box-shadow:0 0 0 8px rgba(255,255,255,.08)}
+.como .steps li{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.22)}
+.como .steps li:hover{background:rgba(255,255,255,.16)}
