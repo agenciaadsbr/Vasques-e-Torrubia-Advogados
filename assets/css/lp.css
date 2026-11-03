@@ -3,7 +3,7 @@
    Paleta oficial nas variáveis abaixo. */
 :root{
   --salvia:#A7BFA7; --salvia-2:#BFD1BF; --salvia-claro:#D9E4D8; --salvia-bg:#E4ECE3;
-  --verde:#4F6F53; --verde-escuro:#3E5A42; --verde-noite:#2B4130; --verde-rodape:#1F2F23;
+  --verde:#4F6F53; --verde-escuro:#3E5A42; --verde-noite:#58775B; --verde-rodape:#4A664D;
   --tinta:#1A1718; --texto:#2B2A28; --suave:#55524D; --linha:#D4CFC6;
   --creme:#F1F4EF; --branco:#fff; --cobre:#C4A484; --fendi:#D4CFC6; --erro:#A3321A;
   --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
@@ -89,7 +89,7 @@ h1,h2{font-family:var(--serif);font-weight:600;color:var(--tinta);line-height:1.
 @keyframes rise{from{transform:translateY(18px)}to{transform:none}}
 
 /* ---------- Faixa animada ---------- */
-.ticker{position:relative;background:var(--verde-noite);color:#E6EEE5;overflow:hidden;padding:18px 0}
+.ticker{position:relative;background:var(--verde-noite);color:#fff;overflow:hidden;padding:18px 0}
 .ticker::before,.ticker::after{content:"";position:absolute;top:0;bottom:0;width:90px;z-index:1;pointer-events:none}
 .ticker::before{left:0;background:linear-gradient(90deg,var(--verde-noite),transparent)}
 .ticker::after{right:0;width:140px;background:linear-gradient(270deg,var(--verde-noite) 45%,transparent)}
@@ -154,10 +154,10 @@ h1,h2{font-family:var(--serif);font-weight:600;color:var(--tinta);line-height:1.
 
 
 /* Como funciona: fundo escuro com foto em parallax */
-.como{position:relative;overflow:hidden;background:var(--verde-noite);color:#E4ECE3;isolation:isolate}
+.como{position:relative;overflow:hidden;background:var(--verde-noite);color:#fff;isolation:isolate}
 .como__bg{position:absolute;left:0;right:0;top:-18%;bottom:-18%;z-index:-2;will-change:transform}
 .como__bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35)}
-.como::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(26,23,24,.86) 0%,rgba(43,65,48,.88) 55%,rgba(26,23,24,.92) 100%)}
+.como::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(88,119,91,.9) 0%,rgba(88,119,91,.86) 55%,rgba(74,102,77,.94) 100%)}
 @supports (animation-timeline:view()){
   @media (prefers-reduced-motion:no-preference){
     .como__bg{animation:comoPar linear both;animation-timeline:view(block);animation-range:cover 0% cover 100%}
@@ -171,9 +171,9 @@ h1,h2{font-family:var(--serif);font-weight:600;color:var(--tinta);line-height:1.
 .como .steps::after{background:var(--salvia)}
 .como .steps b{background:var(--verde-noite);border-color:var(--salvia);color:#fff;box-shadow:0 0 0 8px rgba(167,191,167,.12)}
 .como .steps h3{color:#fff}
-.como .steps p{color:#CBD9CA}
-.como .steps li{padding:28px 26px;border-radius:22px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(4px);transition:transform .45s var(--ease),background-color .45s}
-.como .steps li:hover{transform:translateY(-6px);background:rgba(255,255,255,.1)}
+.como .steps p{color:#F1F4EF}
+.como .steps li{padding:28px 26px;border-radius:22px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(4px);transition:transform .45s var(--ease),background-color .45s}
+.como .steps li:hover{transform:translateY(-6px);background:rgba(255,255,255,.16)}
 .como .steps::before,.como .steps::after{display:none}
 
 /* Responsável */
@@ -198,17 +198,17 @@ h1,h2{font-family:var(--serif);font-weight:600;color:var(--tinta);line-height:1.
 @keyframes open{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 
 /* Contato */
-.cta{position:relative;margin:0 auto 88px;max-width:1360px;border-radius:40px;background:var(--verde-noite);color:#E4ECE3;overflow:hidden}
+.cta{position:relative;margin:0 auto 88px;max-width:1360px;border-radius:40px;background:var(--verde-noite);color:#fff;overflow:hidden}
 .cta__art{position:absolute;inset:0;pointer-events:none}
-.cta__art circle{fill:none;stroke:rgba(167,191,167,.35);stroke-width:1.2}
+.cta__art circle{fill:none;stroke:rgba(255,255,255,.28);stroke-width:1.2}
 .cta__art .spin{transform-origin:center;transform-box:fill-box;animation:spin 60s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .cta__in{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,460px);gap:72px;align-items:center;padding:110px 40px;max-width:var(--max);margin:0 auto}
 .cta h2{color:#fff;font-size:clamp(36px,4.6vw,58px)}
-.cta__txt p{margin-top:18px;font-size:19px;color:#D2DFD1}
+.cta__txt p{margin-top:18px;font-size:19px;color:#fff}
 .cta__list{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:12px}
 .cta__list li{display:flex;gap:12px;align-items:center;font-weight:600;color:#fff}
-.cta__list svg{color:var(--salvia)}
+.cta__list svg{color:#fff}
 .formbox{background:#fff;color:var(--texto);border-radius:28px;padding:40px;box-shadow:0 40px 80px -30px rgba(0,0,0,.5)}
 .formbox h3{font:600 30px/1.1 var(--serif);color:var(--tinta);margin-bottom:6px}
 .formbox .sub{font-size:15px;color:var(--suave);margin-bottom:22px}
@@ -227,11 +227,11 @@ h1,h2{font-family:var(--serif);font-weight:600;color:var(--tinta);line-height:1.
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
 /* Rodapé */
-.ftr{background:var(--verde-rodape);color:#CFCAC0;font-size:15px}
+.ftr{background:var(--verde-rodape);color:#fff;font-size:15px}
 .ftr__in{display:flex;justify-content:space-between;gap:32px;align-items:flex-start;padding-top:52px;padding-bottom:52px}
 .ftr img{height:58px;width:auto;filter:invert(1) brightness(1.05)}
-.ftr p{max-width:520px;color:#B4AEA4}
-.ftr small{display:block;margin-top:10px;color:#8F897F;font-size:13px}
+.ftr p{max-width:520px;color:#F1F4EF}
+.ftr small{display:block;margin-top:10px;color:#E4ECE3;font-size:13px}
 
 /* CTA fixo no celular */
 .mcta{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:none;transform:translateY(140%);transition:transform .45s var(--ease)}
@@ -303,3 +303,4 @@ h1,h2{font-family:var(--serif);font-weight:600;color:var(--tinta);line-height:1.
   .ftr__in{flex-direction:column;align-items:center;text-align:center}
   .mcta{display:block}
 }
+.como h2 em,.cta h2 em{color:#E4ECE3}
